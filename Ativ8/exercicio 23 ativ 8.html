@@ -1,0 +1,42 @@
+
+<head>
+    <script>
+    var maior = 0;
+    var menor = 0;
+    var VerificadorMaior = 0;
+    var VerificadorMenor = 0;
+
+    for (let contador = 0; contador < 20; contador++){
+     var num = parseFloat(prompt("Digite um número:"));
+
+
+    var contadorMaior = num;
+
+    if (contadorMaior > VerificadorMaior) {
+      VerificadorMaior = num;
+      maior= VerificadorMaior;
+    } else {
+      if (VerificadorMaior == 0) {
+          VerificadorMaior = num;
+      }
+    }
+
+    var contadorMenor = num;
+
+    if(contadorMenor < VerificadorMenor) {
+      VerificadorMenor = num;
+      menor =VerificadorMenor;
+    } else{
+      if(VerificadorMenor== 0){
+        VerificadorMenor = num;
+        menor = VerificadorMenor;
+      }
+    }
+  }
+alert("O maior número foi: " + maior + ", e o menor foi: " + menor);
+
+
+
+
+    </script>
+</head>
