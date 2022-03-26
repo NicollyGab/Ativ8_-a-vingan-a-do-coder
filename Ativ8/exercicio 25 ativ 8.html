@@ -1,23 +1,23 @@
 
 <head>
     <script>
-        /*
-        25 - Uma micro calculadora
-Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes operações a serem
-executadas (codificada da seguinte forma: 1.Adição, 2.Subtração, 3.Divisão, 4.Multiplicação).
-O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos. Observação: Considere
-que só serão lidos os valores 1, 2, 3 ou 4 para as operações*/
+        /* 
+        13 - Escreva um programa para ler as notas das duas avaliações de um aluno no semestre, calcular e escrever a média semestral e a seguinte mensagem: PARABÉNS! Você foi aprovado! somente se o aluno foi aprovado (considere 6.0 a média mínima para aprovação e 4 notas informadas).
+        */
 
- var num1 = parseInt(prompt("Digite um número"));
- var num2 = parseInt(prompt("Digite mais um núemro"));
+        var num1 = parseInt(prompt("Digite um número"));
+        var num2 = parseInt(prompt("Digite um número"));
+        var num3 = parseInt(prompt("Digite um número"));
+        var num4 = parseInt(prompt("Digite um número"));
+ 
+        var soma = (num1 + num2 + num3 + num4) / 4 ;
+       
 
- var Adição = ( num1 + num2);
- var Subtração = (num1 - num2);
- var Divisão = ( num1 / num2);
- var Multiplicação = (num1 * num2);
-
- document.write("Esses são os valores dos números informados:" + "Adição:" + Adição+ "<br>"+ "subtração:"+Subtração + "<br>" +"divisão:"+Divisão + "<br>"+"multiplicação:"+Multiplicação);
+        if ( soma >= 6 ) {
+            document.write (" PARABÉNS! VOCÊ FOI APROVADO!" )
+        } else  {
+            document.write("INFELIZMENTE, VOCÊ FOI REPROVADO!")
+        };
 
     </script>
-   
 </head>
